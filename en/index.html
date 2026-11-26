@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sufra | A weekly meal plan from your home kitchen</title>
+  <meta name="description" content="Sufra suggests a weekly menu of home recipes and builds the shopping list for you.">
+  <meta property="og:title" content="Sufra: your weekly meal plan">
+  <meta property="og:description" content="A weekly menu and a ready shopping list.">
+  <meta property="og:image" content="https://fsc-student.github.io/sufra-landing/images/og.webp">
+  <meta property="og:url" content="https://fsc-student.github.io/sufra-landing/en/">
+  <link rel="icon" href="../images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-white font-latin text-slate-800">
+  <header class="sticky top-0 z-10 bg-white/90 backdrop-blur border-b border-slate-200">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <a href="#" class="text-2xl font-bold text-brand-700">Sufra</a>
+      <ul class="hidden gap-6 md:flex">
+        <li><a href="#features" class="hover:text-brand-700">Features</a></li>
+        <li><a href="#pricing" class="hover:text-brand-700">Pricing</a></li>
+        <li><a href="#contact" class="hover:text-brand-700">Contact us</a></li>
+      </ul>
+      <a href="../" lang="ar" class="font-arabic rounded-lg border border-slate-300 px-3 py-1 text-sm">العربية</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="mx-auto grid max-w-6xl items-center gap-10 px-6 py-16 md:grid-cols-2">
+      <div>
+        <h1 class="text-4xl font-bold leading-tight md:text-5xl">What's for dinner? <span class="text-brand-700">Sufra</span> answers.</h1>
+        <p class="mt-4 text-lg text-slate-600">A weekly menu of home recipes and a ready shopping list, in one tap.</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#pricing" class="rounded-lg bg-brand-700 px-6 py-3 font-bold text-white hover:bg-brand-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Try it free</a>
+          <a href="#features" class="rounded-lg border border-slate-300 px-6 py-3 font-bold hover:border-brand-500">How it works</a>
+        </div>
+      </div>
+      <img src="../images/app-screen.webp" alt="The app screen showing the weekly menu" width="560" height="420" class="w-full h-auto">
+    </section>
+
+    <section id="features" class="bg-brand-50 py-16">
+      <div class="mx-auto max-w-6xl px-6">
+        <h2 class="text-center text-3xl font-bold">Why Sufra?</h2>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-xl bg-white p-6 shadow-sm">
+            <h3 class="text-xl font-bold text-brand-700">Weekly menu</h3>
+            <p class="mt-2 text-slate-600">Seven days of home recipes, to your taste and your budget.</p>
+          </article>
+          <article class="rounded-xl bg-white p-6 shadow-sm">
+            <h3 class="text-xl font-bold text-brand-700">Shopping list</h3>
+            <p class="mt-2 text-slate-600">Every ingredient in one list, sorted by store section.</p>
+          </article>
+          <article class="rounded-xl bg-white p-6 shadow-sm">
+            <h3 class="text-xl font-bold text-brand-700">Arabic and English</h3>
+            <p class="mt-2 text-slate-600">The whole app in both languages, and you switch in one tap.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="mx-auto max-w-6xl px-6 py-16">
+      <h2 class="text-center text-3xl font-bold">Pricing</h2>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <article class="rounded-xl border border-slate-200 p-6">
+          <h3 class="text-xl font-bold">Free</h3>
+          <p class="mt-2 text-4xl font-bold">$0</p>
+          <ul class="mt-4 space-y-2 text-slate-600"><li>One weekly menu</li><li>Shopping list</li></ul>
+        </article>
+        <article class="relative rounded-xl border-2 border-brand-500 p-6 shadow-lg">
+          <span class="absolute -top-3 start-6 rounded-full bg-amber-400 px-3 text-sm font-bold">Most popular</span>
+          <h3 class="text-xl font-bold">Family</h3>
+          <p class="mt-2 text-4xl font-bold">$5 <span class="text-base font-normal text-slate-500">per month</span></p>
+          <ul class="mt-4 space-y-2 text-slate-600"><li>A menu every week</li><li>Up to 6 people</li><li>Recipes for your diet</li></ul>
+        </article>
+        <article class="rounded-xl border border-slate-200 p-6">
+          <h3 class="text-xl font-bold">Restaurants</h3>
+          <p class="mt-2 text-4xl font-bold">$29 <span class="text-base font-normal text-slate-500">per month</span></p>
+          <ul class="mt-4 space-y-2 text-slate-600"><li>Daily menu</li><li>Quantity calculator</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-slate-50 py-16">
+      <div class="mx-auto max-w-xl px-6">
+        <h2 class="text-center text-3xl font-bold">Contact us</h2>
+        <form action="https://example.com/contact" method="post" class="mt-8 grid grid-cols-1 gap-4">
+          <label for="name" class="font-bold">Name</label>
+          <input id="name" name="name" required class="rounded-lg border border-slate-300 px-4 py-2 focus-visible:outline-2 focus-visible:outline-brand-500">
+          <label for="email" class="font-bold">Email</label>
+          <input id="email" name="email" type="email" required dir="auto" class="rounded-lg border border-slate-300 px-4 py-2 focus-visible:outline-2 focus-visible:outline-brand-500">
+          <label for="msg" class="font-bold">Your message</label>
+          <textarea id="msg" name="message" rows="4" required class="rounded-lg border border-slate-300 px-4 py-2 focus-visible:outline-2 focus-visible:outline-brand-500"></textarea>
+          <button class="rounded-lg bg-brand-700 py-3 font-bold text-white hover:bg-brand-900">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500">
+    <p>Sufra, a practice project. &copy; 2026</p>
+  </footer>
+</body>
+</html>
